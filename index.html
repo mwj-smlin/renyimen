@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.main{
+				width: 140px;
+				height: 264px;
+				margin: 100px auto;
+				/*border: 1px solid #ccc;*/
+				position: relative;
+			}
+			
+			.mingren{
+				width:36px;
+				height: 66px;
+				background: url(img/renyimen.png);
+				/*如果要实现游戏技能的动画，那么需要用到steps属性*/
+				animation: mingren 2s infinite steps(4);
+			}
+			@keyframes mingren{
+				from{
+					background-position: 0 0;
+				}
+				to{
+					background-position: 0px -264px;
+				}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			
+			<div class="mingren">
+				
+			</div>
+		</div>
+	</body>
+</html>
